@@ -1,1 +1,34 @@
-[]
+{
+  "TemplateID": "starrupture",
+  "DisplayName": "StarRupture Dedicated Server",
+  "Description": "StarRupture dedicated server using SteamCMD",
+  "Author": "Custom",
+  "Version": "1.0",
+
+  "DeploymentTemplate": true,
+  "IsGameServer": true,
+
+  "RequiresSteamCMD": true,
+  "SteamAppID": 3247030,
+  "SteamBranch": "public",
+
+  "DefaultExecutable": "StarRuptureServer.exe",
+  "DefaultWorkingDirectory": ".",
+  "DefaultCommandLine": "-log",
+
+  "SupportsWindows": true,
+  "SupportsLinux": true,
+
+  "Ports": [
+    {
+      "Port": 7777,
+      "Protocol": "UDP",
+      "Description": "Game Port"
+    },
+    {
+      "Port": 27015,
+      "Protocol": "UDP",
+      "Description": "Query Port"
+    }
+  ]
+}
